@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="bai tap thuc hanh cau E nguyen nhu cuong"/>
+        <attribute name="authors" value="LAB2-PC02"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-28 11:09:38 SA"/>
+        <attribute name="created" value="TEFCMi1QQzAyO0RFU0tUT1AtT043UkNKTzsyMDI1LTAyLTI4OzA5OjExOjA0IFNBOzI5MTU="/>
+        <attribute name="edited" value="TEFCMi1QQzAyO0RFU0tUT1AtT043UkNKTzsyMDI1LTAyLTI4OzExOjA5OjM4IFNBOzY7MzAzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;nh&#7853;p n:&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n&gt;=0">
+                <then>
+                    <if expression="n=1 or n=0">
+                        <then>
+                            <output expression="&quot;khong phai la so nguyen to&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="n&lt;4">
+                                <then>
+                                    <output expression="&quot;la so nguyen to&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <declare name="i" type="Integer" array="False" size=""/>
+                                    <assign variable="i" expression="2"/>
+                                    <while expression="n%i!=0">
+                                        <assign variable="i" expression="i+1"/>
+                                    </while>
+                                    <if expression="i==n">
+                                        <then>
+                                            <output expression="&quot;la so nguyen to&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;khong phai la so nguyen to&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;n la so nguyen am&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;sinh vien: Nguyen nhu cuong&quot;" newline="True"/>
+            <output expression="&quot;MSSV 235752020710047&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
