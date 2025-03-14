@@ -5,7 +5,7 @@ dựa trên một ký tự phân tách"""
 print(b)
 c=" ".join(b)
 """.join() là phương thức của chuỗi string dùng để nối các phần tử trong danh sách 
-thành 1 chuỗi sử dụng một kỹ tự phân tách """
+thành 1 chuỗi sử dụng một ký tự phân tách """
 print(c)
 print("Sinh viên: nguyen nhu cuong")
 print(" MSSV: 235752020710047")
